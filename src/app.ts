@@ -14,7 +14,7 @@ app.use(cors());
 
 
 
-app.get('/',async(req,res)=>{
+app.get('/getOwnedNfts',async(req,res)=>{
     (async()=>{
         console.log(`hello world`);
         Moralis.start({ serverUrl: "https://inuchpvr19tw.usemoralis.com:2053/server", appId: "MhvbvOiMJHtoL1iOTay1RS0wfwkfMRzzAj7kGbq8" });
