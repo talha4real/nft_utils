@@ -45,9 +45,10 @@ router.post('/',[],async (req:any,res:any)=>{
         try {
             const response = await wallet.sendTransaction(txn)
             console.log(response)
+            res.send({respnse: response})
         } catch (e) {
-            console.log(e.name)
-            console.log(e.message)
+            console.log(e)
+           
         }
 
       })();
